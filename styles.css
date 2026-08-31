@@ -175,7 +175,7 @@ h1 {
 }
 
 h1 em {
-  color: var(--ink-deep);
+  color: inherit;
   font-weight: 500;
 }
 
