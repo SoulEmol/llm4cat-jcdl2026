@@ -21,7 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=3" />
+    <link rel="stylesheet" href="styles.css?v=4" />
   </head>
   <body>
     <header class="site-header">
@@ -139,13 +139,81 @@
         <div class="section-heading compact">
           <p class="eyebrow">Open resources</p>
           <h2>Tutorial materials</h2>
-          <p>Slides, notebooks, and sample data will be released here before the tutorial.</p>
+          <p>Download the slides, launch the hands-on notebooks, and explore the accompanying code and readings.</p>
         </div>
         <div class="materials-grid">
-          <div class="material-card"><span aria-hidden="true">▤</span><h3>Slides</h3><p>Coming soon</p></div>
-          <div class="material-card"><span aria-hidden="true">⌘</span><h3>Colab notebooks</h3><p>Coming soon</p></div>
-          <div class="material-card"><span aria-hidden="true">◫</span><h3>Sample dataset</h3><p>Coming soon</p></div>
-          <div class="material-card"><span aria-hidden="true">↗</span><h3>Reading list</h3><p>Coming soon</p></div>
+          <article class="material-card">
+            <span class="material-icon" aria-hidden="true">▤</span>
+            <h3>Slides</h3>
+            <ul class="resource-links">
+              <li><a href="materials/slides/JCDL-LLM.pptx" download><span>LLM slides</span><small>PPTX ↓</small></a></li>
+              <li><a href="materials/slides/JCDL-VLM.pptx" download><span>VLM slides</span><small>PPTX ↓</small></a></li>
+            </ul>
+          </article>
+          <article class="material-card">
+            <span class="material-icon" aria-hidden="true">⌘</span>
+            <h3>Colab notebooks</h3>
+            <ul class="resource-links">
+              <li><a href="https://colab.research.google.com/github/SoulEmol/llm4cat-jcdl2026/blob/main/materials/notebooks/JCDL_LLM.ipynb" target="_blank" rel="noreferrer"><span>LLM notebook</span><small>Open ↗</small></a></li>
+              <li><a href="https://colab.research.google.com/github/SoulEmol/llm4cat-jcdl2026/blob/main/materials/notebooks/JCDL_VLM.ipynb" target="_blank" rel="noreferrer"><span>VLM notebook</span><small>Open ↗</small></a></li>
+            </ul>
+          </article>
+          <article class="material-card">
+            <span class="material-icon" aria-hidden="true">◫</span>
+            <h3>Dataset &amp; code</h3>
+            <ul class="resource-links">
+              <li><a href="https://github.com/llm4cat/LLMs" target="_blank" rel="noreferrer"><span>Dataset repository</span><small>GitHub ↗</small></a></li>
+              <li><a href="materials/code/llm-scripts.zip" download><span>Supporting scripts</span><small>ZIP ↓</small></a></li>
+            </ul>
+          </article>
+          <article class="material-card">
+            <span class="material-icon" aria-hidden="true">↗</span>
+            <h3>Reading list</h3>
+            <ul class="resource-links">
+              <li><a href="#reading-list"><span>Related papers</span><small>8 papers ↓</small></a></li>
+            </ul>
+          </article>
+        </div>
+
+        <div id="reading-list" class="reading-list">
+          <div class="reading-list-heading">
+            <p class="eyebrow">Suggested reading</p>
+            <h3>Related papers</h3>
+          </div>
+          <ol class="reading-items">
+            <li>
+              <a href="https://arxiv.org/abs/2507.22913" target="_blank" rel="noreferrer">A Hybrid Framework for Subject Analysis: Integrating Embedding-Based Regression Models with Large Language Models</a>
+              <p>Liu, Song, Zhang, Thomale, He, and Hong · 2025</p>
+            </li>
+            <li>
+              <a href="https://arxiv.org/abs/2403.16424" target="_blank" rel="noreferrer">An Experiment with the Use of ChatGPT for LCSH Subject Assignment on Electronic Theses and Dissertations</a>
+              <p>Chow, Kao, and Li · 2024</p>
+            </li>
+            <li>
+              <a href="https://arxiv.org/abs/2005.11401" target="_blank" rel="noreferrer">Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</a>
+              <p>Lewis et al. · NeurIPS 2020</p>
+            </li>
+            <li>
+              <a href="https://arxiv.org/abs/2305.14314" target="_blank" rel="noreferrer">QLoRA: Efficient Finetuning of Quantized LLMs</a>
+              <p>Dettmers, Pagnoni, Holtzman, and Zettlemoyer · NeurIPS 2023</p>
+            </li>
+            <li>
+              <a href="https://arxiv.org/abs/2106.09685" target="_blank" rel="noreferrer">LoRA: Low-Rank Adaptation of Large Language Models</a>
+              <p>Hu et al. · ICLR 2022</p>
+            </li>
+            <li>
+              <a href="https://proceedings.mlr.press/v139/radford21a.html" target="_blank" rel="noreferrer">Learning Transferable Visual Models From Natural Language Supervision</a>
+              <p>Radford et al. · ICML 2021</p>
+            </li>
+            <li>
+              <a href="https://doi.org/10.1007/s00530-022-01025-2" target="_blank" rel="noreferrer">Multimodal Metadata Assignment for Cultural Heritage Artifacts</a>
+              <p>Rei et al. · Multimedia Systems, 2023</p>
+            </li>
+            <li>
+              <a href="https://doi.org/10.5860/ital.v43i3.17245" target="_blank" rel="noreferrer">Responsible AI Practice in Libraries and Archives: A Review of the Literature</a>
+              <p>Mannheimer et al. · Information Technology and Libraries, 2024</p>
+            </li>
+          </ol>
         </div>
       </section>
 
